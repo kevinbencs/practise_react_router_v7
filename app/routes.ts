@@ -5,10 +5,13 @@ export default [
         index("routes/home.tsx"),
         route("login", "./routes/login.tsx"),
         route("signup", "./routes/signup.tsx"),
-        route("dashboard", "./layout/dashboardLayout.tsx",[
-            index( "./routes/dashboard.tsx"),
+        route("search", "./routes/search.tsx"),
+        route("dashboard", "./layout/dashboardLayout.tsx", [
+            index("./routes/dashboard.tsx"),
+            route("newpassword", "./routes/newPass.tsx"),
+            route("deleteacc", "./routes/delAcc.tsx"),
         ]),
-        
+
     ]),
 
 ] satisfies RouteConfig;
